@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desarrollo Web</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
     
     <link rel="stylesheet" href="style.css">
 </head>
@@ -21,130 +23,252 @@
 
 </header>
 
-<nav>
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container">
 
-    <ul>
+        <a class="navbar-brand" href="#">
+            Desarrollo Web
+        </a>
 
-        <li><a href="#inicio">Inicio</a></li>
+        <button class="navbar-toggler" type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#menu"
+            aria-controls="menu"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
 
-        <li><a href="#quienes">Quiénes Somos</a></li>
+            <span class="navbar-toggler-icon"></span>
 
-        <li><a href="#servicios">Servicios</a></li>
+        </button>
 
-        <li><a href="#contacto">Contacto</a></li>
+        <div class="collapse navbar-collapse" id="menu">
 
-    </ul>
+            <ul class="navbar-nav ms-auto">
 
+                <li class="nav-item">
+                    <a class="nav-link" href="#inicio">Inicio</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#quienes-somos">Quiénes Somos</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#servicios">Servicios</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#contacto">Contacto</a>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
 </nav>
 
 <main>
 
-    <section id="inicio">
+<section id="inicio" class="container text-center py-5">
 
-    <h2>Inicio</h2>
+    <h2 class="display-5 fw-bold text-primary">
+        Bienvenido
+    </h2>
 
-    <p>
-        Bienvenido al proyecto "Aprendizaje y Desarrollo de Aplicaciones Web". Este sitio web tiene como propósito presentar los fundamentos del desarrollo de aplicaciones web utilizando HTML5 y CSS. Aquí encontrarás información sobre el proyecto, los servicios relacionados con el desarrollo web, recursos multimedia y datos de contacto. Además, esta página demuestra el uso de etiquetas semánticas para organizar correctamente el contenido y ofrecer una experiencia clara y ordenada al usuario.
+    <p class="lead">
+        Bienvenido al proyecto "Aprendizaje y Desarrollo de Aplicaciones Web". Este sitio web tiene como propósito presentar los fundamentos del desarrollo de aplicaciones web utilizando HTML5, CSS3 y Bootstrap. Aquí encontrarás información sobre el proyecto, los servicios relacionados con el desarrollo web, recursos multimedia y datos de contacto.
     </p>
+
+    <a href="#servicios" class="btn btn-primary btn-lg">
+        Ver Servicios
+    </a>
 
 </section>
 
-<section id="quienes">
+<section id="quienes-somos" class="container py-5">
 
-    <h2>Quiénes Somos</h2>
+    <h2 class="text-center text-primary mb-4">Quiénes Somos</h2>
 
-    <article>
+    <div class="row align-items-center">
+
+        <div class="col-md-6">
+
+            <p>
+                El proyecto "Aprendizaje y Desarrollo de Aplicaciones Web" tiene como objetivo fortalecer los conocimientos sobre el diseño y creación de sitios web utilizando HTML5, CSS y Bootstrap. Durante el desarrollo del proyecto se aplican etiquetas semánticas, estructuras organizadas y elementos multimedia para construir páginas modernas, funcionales y fáciles de navegar.
+            </p>
+
+            <p>
+                Además, se busca comprender la importancia de una correcta organización del contenido, mejorar las habilidades de programación y fomentar la creatividad en el desarrollo de aplicaciones web.
+            </p>
+
+        </div>
+
+        <div class="col-md-6 text-center">
+
+            <img src="../assets/img/images.jfif"
+                 class="img-fluid rounded shadow"
+                 alt="Desarrollo de aplicaciones web">
+
+        </div>
+
+    </div>
+
+</section>
+
+<section id="servicios" class="container py-5">
+
+    <h2 class="text-center text-primary mb-4">Servicios</h2>
+
+    <div class="row">
+
+        <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Diseño Web</h5>
+                    <p class="card-text">
+                        Creación de páginas web modernas y atractivas utilizando HTML5, CSS3 y Bootstrap.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Contenido Multimedia</h5>
+                    <p class="card-text">
+                        Integración de imágenes, videos y otros recursos multimedia para mejorar la experiencia del usuario.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Mantenimiento</h5>
+                    <p class="card-text">
+                        Actualización y mantenimiento de sitios web para garantizar su correcto funcionamiento.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<section id="video" class="container py-5">
+
+    <h2 class="text-center text-primary mb-4">
+        Video Informativo
+    </h2>
+
+    <div class="ratio ratio-16x9">
+
+        <iframe
+            src="https://www.youtube.com/embed/mNbnV3aN3KA?si=kNyF0tLNgeYJmIHy"
+            title="Aprende HTML en 15 minutos"
+            allowfullscreen>
+        </iframe>
+
+    </div>
+
+</section>
+
+<aside class="container py-4">
+
+    <div class="alert alert-info">
+
+        <h4>Información adicional</h4>
 
         <p>
-            El proyecto "Aprendizaje y Desarrollo de Aplicaciones Web" tiene como objetivo fortalecer los conocimientos sobre el diseño y creación de sitios web utilizando HTML5 y CSS. Durante el desarrollo de este proyecto se aplican etiquetas semánticas, estructuras organizadas y elementos multimedia que permiten construir páginas modernas, funcionales y fáciles de navegar. Además, se busca comprender la importancia de una correcta organización del contenido, mejorar las habilidades de programación y fomentar la creatividad en el desarrollo de aplicaciones web. Este proyecto constituye una base fundamental para el aprendizaje de tecnologías web y el desarrollo de futuras aplicaciones con una mejor experiencia para los usuarios.
+            Horario de atención: lunes a viernes de 08:00 a 17:00.
         </p>
 
-        <img src="../assets/img/images.jfif"
-             alt="Desarrollo de aplicaciones web"
-             width="450">
+        <p>
+            Promoción: asesoría gratuita para proyectos web durante el primer mes.
+        </p>
 
-    </article>
-
-</section>
-
-<section id="servicios">
-
-    <h2>Servicios</h2>
-
-    <ul>
-        <li>Diseño de páginas web.</li>
-        <li>Creación de contenido multimedia.</li>
-        <li>Desarrollo de sitios con HTML5.</li>
-        <li>Organización de información en páginas web.</li>
-        <li>Actualización y mantenimiento de sitios web.</li>
-    </ul>
-
-</section>
-
-<section id="video">
-
-    <h2>Video Informativo</h2>
-
-    <iframe
-        width="560"
-        height="315"
-        src="https://www.youtube.com/embed/mNbnV3aN3KA?si=kNyF0tLNgeYJmIHy"
-        title="Aprende HTML en 15 minutos"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin"
-        allowfullscreen>
-    </iframe>
-
-</section>
-
-<aside>
-
-    <h3>Información adicional</h3>
-
-    <p>
-        Horario de atención: lunes a viernes de 08:00 a 17:00.
-    </p>
-
-    <p>
-        Promoción: asesoría gratuita para proyectos web durante el primer mes.
-    </p>
+    </div>
 
 </aside>
 
-<section id="contacto">
+<section id="contacto" class="container py-5">
 
-    <h2>Contacto</h2>
+    <h2 class="text-center text-primary mb-4">Contacto</h2>
 
-    <p><strong>Correo:</strong> info@desarrolloweb.com</p>
+    <form>
 
-    <p><strong>Teléfono:</strong> (04) 123-4567</p>
+        <div class="mb-3">
+            <label for="nombre" class="form-label">Nombre</label>
+            <input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre">
+        </div>
 
-    <p><strong>Dirección:</strong> Milagro, Guayas, Ecuador</p>
+        <div class="mb-3">
+            <label for="correo" class="form-label">Correo electrónico</label>
+            <input type="email" class="form-control" id="correo" placeholder="Ingrese su correo">
+        </div>
 
-    <h3>Redes Sociales</h3>
+        <div class="mb-3">
+            <label for="mensaje" class="form-label">Mensaje</label>
+            <textarea class="form-control" id="mensaje" rows="4" placeholder="Escriba su mensaje"></textarea>
+        </div>
 
-    <a href="https://www.facebook.com" target="_blank">Facebook</a><br>
+        <button type="submit" class="btn btn-primary">
+            Enviar
+        </button>
 
-    <a href="https://www.instagram.com" target="_blank">Instagram</a><br>
+    </form>
 
-    <a href="https://www.youtube.com" target="_blank">YouTube</a>
+    <hr class="my-4">
+
+    <h4>Síguenos en nuestras redes sociales</h4>
+
+    <a href="https://www.facebook.com" target="_blank" class="btn btn-primary me-2">
+        Facebook
+    </a>
+
+    <a href="https://www.instagram.com" target="_blank" class="btn btn-danger me-2">
+        Instagram
+    </a>
+
+    <a href="https://www.youtube.com" target="_blank" class="btn btn-danger">
+        YouTube
+    </a>
 
 </section>
 
 </main>
 
-<footer>
+<footer class="bg-dark text-white text-center py-4 mt-5">
 
-    <p><strong>Estudiante:</strong> Ashley Scarlet Alvarado Pilozo</p>
+    <div class="container">
 
-    <p><strong>Asignatura:</strong> Desarrollo de Aplicaciones Web</p>
+        <h5>Desarrollo de Aplicaciones Web</h5>
 
-    <p><strong>Universidad:</strong> Universidad Estatal Amazónica</p>
+        <p class="mb-1">
+            <strong>Estudiante:</strong> Ashley Scarlet Alvarado Pilozo
+        </p>
 
-    <p><strong>Año:</strong> 2026</p>
+        <p class="mb-1">
+            <strong>Asignatura:</strong> Desarrollo de Aplicaciones Web
+        </p>
+
+        <p class="mb-1">
+            <strong>Universidad:</strong> Universidad Estatal Amazónica
+        </p>
+
+        <p class="mb-0">
+            © 2026 - Todos los derechos reservados.
+        </p>
+
+    </div>
 
 </footer>
     
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html> 

@@ -37,34 +37,6 @@ header p {
     font-size: 18px;
 }
 
-/* Menú de navegación */
-
-nav {
-    background-color: #4682B4;
-    padding: 12px;
-}
-
-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 17px;
-    transition: 0.3s;
-}
-
-nav ul li a:hover {
-    color: #FFD700;
-}
-
 /* Contenido principal */
 
 main {
@@ -142,4 +114,26 @@ footer {
 
 footer p {
     margin: 5px 0;
+}
+
+/* Efecto para las tarjetas de servicios */
+
+.card {
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Botones con bordes redondeados */
+
+.btn {
+    border-radius: 8px;
+}
+
+/* Separación del título del footer */
+
+footer h5 {
+    margin-bottom: 15px;
 }
